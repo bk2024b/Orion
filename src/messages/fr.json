@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "ORION — Digital Systems for Ambitious Businesses",
+    "description": "Studio de transformation digitale basé au Bénin. Nous concevons des sites web haute performance, applications métier sur-mesure et systèmes d'IA pour propulser votre entreprise."
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "work": "Réalisations",
+    "blog": "Blog",
+    "about": "À propos",
+    "contact": "Contact",
+    "dashboard": "Espace Client",
+    "startProject": "Démarrer un projet",
+    "language": "Langue"
+  },
+  "hero": {
+    "badge": "Studio de Transformation Digitale",
+    "titleLine1": "Nous bâtissons des",
+    "titleGradient": "systèmes digitaux",
+    "titleLine2": "pour entreprises ambitieuses.",
+    "subtitle": "Au-delà du simple site web : nous concevons des plateformes web de pointe, des applications métiers sur-mesure et des automatisations IA qui transforment vos opérations et accélèrent votre croissance.",
+    "ctaPrimary": "Estimer mon projet en 2 min",
+    "ctaSecondary": "Explorer nos réalisations",
+    "stat1Value": "99.9%",
+    "stat1Label": "Uptime garanti",
+    "stat2Value": "3.5x",
+    "stat2Label": "Taux de conversion moyen",
+    "stat3Value": "< 1s",
+    "stat3Label": "Vitesse de chargement"
+  },
+  "problem": {
+    "badge": "Le Constat",
+    "title": "Un site vitrine passif ne suffit plus à dominer votre marché",
+    "subtitle": "Les entreprises modernes perdent des clients chaque jour à cause d'outils digitaux lents, déconnectés de leurs opérations et dépourvus d'intelligence.",
+    "card1Title": "Sites vitrines statiques & lents",
+    "card1Desc": "Des pages lourdes qui ne convertissent pas les visiteurs et nuisent à la crédibilité de votre marque.",
+    "card2Title": "Processus manuels chronophages",
+    "card2Desc": "Des heures perdues sur WhatsApp, des feuilles de calcul désorganisées et des relances manuelles inefficaces.",
+    "card3Title": "Outils génériques non adaptés",
+    "card3Desc": "Des logiciels préfabriqués qui forcent votre entreprise à s'adapter à eux plutôt que l'inverse."
+  },
+  "divisions": {
+    "badge": "Nos 4 Divisions",
+    "title": "Une expertise à 360° pour chaque palier de votre croissance",
+    "subtitle": "De la vitrine premium au logiciel d'exploitation dopé à l'intelligence artificielle.",
+    "web": {
+      "tag": "Division 01",
+      "name": "WEB",
+      "tagline": "Présence digitale d'élite",
+      "desc": "Sites vitrines ultra-rapides, design obsidian sophistiqué et narration percutante conçus pour asseoir votre autorité et convertir vos visiteurs en opportunités qualifiées.",
+      "features": ["Design Obsidian & Typographies Modernes", "Performance Core Web Vitals < 1s", "SEO Technique & International", "100% Responsive & Adaptatif"]
+    },
+    "business": {
+      "tag": "Division 02",
+      "name": "BUSINESS",
+      "tagline": "Plateformes dynamiques & Contenu",
+      "desc": "Écosystèmes digitaux évolutifs dotés d'un CMS sur-mesure, de blogs optimisés pour le référencement naturel et d'intégrations marketing avancées.",
+      "features": ["CMS fluide sans friction technique", "Architecture de blog orientée conversion", "Formulaires interactifs & Analytics précis", "Multi-langues natif FR / EN"]
+    },
+    "systems": {
+      "tag": "Division 03",
+      "name": "SYSTEMS",
+      "tagline": "Applications métier & SaaS sur-mesure",
+      "desc": "Logiciels opérationnels conçus pour digitaliser vos processus critiques : systèmes de réservation, portails clients, CRM et tableaux de bord décisionnels.",
+      "features": ["Portails clients & Dashboards temps réel", "Moteurs de réservation & gestion de flux", "Bases de données Postgres / Supabase sécurisées", "Architecture modulaire et scalable"]
+    },
+    "ai": {
+      "tag": "Division 04",
+      "name": "AI & AUTOMATION",
+      "tagline": "Intelligence artificielle appliquée",
+      "desc": "Déploiement d'agents IA conversationnels, assistants de qualification 24/7, automatisations WhatsApp Business et synchronisation de workflows sans couture.",
+      "features": ["Assistants de qualification de prospects", "Automatisations WhatsApp & notifications instantanées", "Connexion API Groq / Llama & LLMs avancés", "Réduction drastique des temps de réponse client"]
+    }
+  },
+  "care": {
+    "badge": "Offre Récurrente",
+    "title": "ORION CARE — Votre infrastructure digitale sous surveillance 24/7",
+    "subtitle": "Un partenariat continu pour garantir que vos systèmes restent ultra-sécurisés, véloces et toujours alignés avec vos objectifs.",
+    "plan1Name": "Essential",
+    "plan1Price": "Sur mesure",
+    "plan1Desc": "Hébergement managé haute disponibilité, sauvegardes quotidiennes et mises à jour de sécurité critiques.",
+    "plan2Name": "Growth",
+    "plan2Price": "Recommandé",
+    "plan2Desc": "Tout Essential + monitoring des performances, optimisations SEO mensuelles et support prioritaire dédié.",
+    "plan3Name": "Scale",
+    "plan3Price": "Entreprise",
+    "plan3Desc": "Tout Growth + heures d'itérations produit mensuelles, audit de sécurité continu et intégrations IA régulières.",
+    "cta": "Souscrire à ORION CARE"
+  },
+  "method": {
+    "badge": "Notre Méthode",
+    "title": "Une exécution chirurgicale en 4 étapes",
+    "subtitle": "Pas de réunions interminables ni de promesses floues : un processus éprouvé et transparent.",
+    "step1Num": "01",
+    "step1Title": "Diagnostic & Cadrage",
+    "step1Desc": "Analyse approfondie de votre modèle économique, de vos goulots d'étranglement et définition des spécifications techniques précises.",
+    "step2Num": "02",
+    "step2Title": "Architecture & Prototypage",
+    "step2Desc": "Conception de l'UI/UX sur-mesure, validation des parcours utilisateurs et structuration des bases de données.",
+    "step3Num": "03",
+    "step3Title": "Développement & Tests Rigoureux",
+    "step3Desc": "Code propre avec Next.js, Supabase et Tailwind. Tests de performance, d'accessibilité et de sécurité.",
+    "step4Num": "04",
+    "step4Title": "Déploiement & Accompagnement",
+    "step4Desc": "Mise en ligne sur infrastructure Edge (Vercel), formation de vos équipes et activation du suivi ORION CARE."
+  },
+  "work": {
+    "badge": "Études de Cas",
+    "title": "Des résultats tangibles pour des leaders ambitieux",
+    "subtitle": "Découvrez comment nous avons transformé les défis de nos clients en avantages compétitifs.",
+    "viewCase": "Consulter l'étude de cas",
+    "case1Category": "SYSTEMS & BOOKING",
+    "case1Title": "Clinique Médicale Privée",
+    "case1Problem": "Gestion des rendez-vous par téléphone saturée, retards chroniques et dossiers patients dispersés.",
+    "case1Solution": "Portail web sécurisé avec prise de rendez-vous en ligne instantanée, rappels automatiques et dashboard pour praticiens.",
+    "case1Result": "+140% de réservations en ligne, -65% d'appels entrants non traités.",
+    "case2Category": "AI & AUTOMATION",
+    "case2Title": "Distributeur & Logistique Régionale",
+    "case2Problem": "Prospects perdus la nuit et le week-end, qualification commerciale manuelle trop lente.",
+    "case2Solution": "Agent IA WhatsApp & Web qualifiant automatiquement les demandes de devis et alertant l'équipe en temps réel.",
+    "case2Result": "Temps de première réponse réduit de 4h à 8 secondes, conversion devis +48%.",
+    "case3Category": "WEB & BUSINESS",
+    "case3Title": "Complexe Éducatif Privé d'Excellence",
+    "case3Problem": "Site obsolète ne reflétant pas le standing de l'établissement, inscriptions papier lentes.",
+    "case3Solution": "Site bilingue moderne avec visite virtuelle interactive et module de pré-inscription numérique.",
+    "case3Result": "Hausse de 85% des demandes de pré-inscription pour la rentrée."
+  },
+  "about": {
+    "badge": "Notre Philosophie",
+    "title": "Construire au-delà des standards établis",
+    "subtitle": "ORION est né d'une conviction : l'Afrique et le monde regorgent d'entreprises ambitieuses qui méritent des systèmes technologiques de niveau mondial.",
+    "storyP1": "Fondé par BK Global Technologies à Cotonou (Bénin), ORION allie rigueur d'ingénierie logicielle, design d'exception et intelligence artificielle appliquée.",
+    "storyP2": "Nous ne livrons pas seulement du code : nous concevons des actifs stratégiques pérennes qui s'intègrent au cœur de vos opérations et génèrent un retour sur investissement mesurable dès le premier jour.",
+    "value1Title": "Zéro compromis sur la qualité",
+    "value1Desc": "Chaque ligne de code est optimisée pour la vitesse, la robustesse et la sécurité.",
+    "value2Title": "Orientation ROI & Métier",
+    "value2Desc": "La technologie n'est qu'un moyen : notre boussole reste votre croissance et votre rentabilité.",
+    "value3Title": "Transparence & Vitesse",
+    "value3Desc": "Des livrables clairs, des étapes visibles et une communication continue sans jargon."
+  },
+  "contact": {
+    "badge": "Contactez-nous",
+    "title": "Prêt à propulser votre entreprise dans une autre dimension ?",
+    "subtitle": "Discutez directement avec notre assistant IA pour une qualification immédiate ou envoyez-nous un message.",
+    "formName": "Votre nom",
+    "formNamePlaceholder": "Josias K.",
+    "formEmail": "Adresse email professionnelle",
+    "formEmailPlaceholder": "contact@votre-entreprise.com",
+    "formWhatsapp": "Numéro WhatsApp / Téléphone",
+    "formWhatsappPlaceholder": "+229 00 00 00 00",
+    "formCompany": "Nom de votre entreprise",
+    "formCompanyPlaceholder": "Acme Corp",
+    "formDivision": "Division concernée",
+    "formMessage": "Parlez-nous de votre projet",
+    "formMessagePlaceholder": "Décrivez brièvement vos objectifs, vos délais et votre vision...",
+    "formSubmit": "Transmettre ma demande",
+    "formSuccess": "Merci ! Votre demande a été reçue. Un membre de l'équipe ORION vous recontacte sous 24h.",
+    "chatAlternativeTitle": "Besoin d'une réponse instantanée ?",
+    "chatAlternativeDesc": "Notre assistant intelligent évalue votre besoin et vous fournit une première estimation en moins de 2 minutes.",
+    "openChat": "Ouvrir le chat interactif"
+  },
+  "chatWidget": {
+    "headerTitle": "ORION Assistant",
+    "headerStatus": "En ligne • Réponse instantanée",
+    "welcomeMessage": "Bonjour ! Je suis l'assistant de qualification d'ORION. Quel type de projet souhaitez-vous bâtir (site vitrine, portail métier, automatisation ou IA) ?",
+    "inputPlaceholder": "Décrivez votre projet...",
+    "send": "Envoyer",
+    "quick1": "Créer un site vitrine moderne",
+    "quick2": "Développer une application sur-mesure",
+    "quick3": "Automatiser avec l'IA et WhatsApp"
+  },
+  "footer": {
+    "tagline": "Digital systems for ambitious businesses.",
+    "copyright": "© 2026 ORION by BK Global Technologies. Tous droits réservés.",
+    "quickLinks": "Navigation",
+    "divisions": "Divisions",
+    "legal": "Mentions Légales",
+    "privacy": "Politique de Confidentialité",
+    "location": "Cotonou, Bénin • International"
+  }
+}

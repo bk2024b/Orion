@@ -1,0 +1,22 @@
+{
+  "name": "ORION Admin — Studio Systems",
+  "short_name": "ORION Admin",
+  "description": "Portail d'administration PWA d'ORION pour le suivi des leads et des projets en temps réel.",
+  "start_url": "/fr/admin",
+  "display": "standalone",
+  "background_color": "#0B0B0F",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

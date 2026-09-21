@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "title": "ORION — Digital Systems for Ambitious Businesses",
+    "description": "Digital transformation studio based in Benin. We build high-performance websites, custom business software, and AI automation systems to elevate your business."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "work": "Work",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Client Portal",
+    "startProject": "Start a Project",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "Digital Transformation Studio",
+    "titleLine1": "We engineer",
+    "titleGradient": "digital systems",
+    "titleLine2": "for ambitious businesses.",
+    "subtitle": "Beyond traditional websites: we craft high-velocity web platforms, bespoke business applications, and AI automations that scale your operations and drive measurable ROI.",
+    "ctaPrimary": "Estimate My Project (2 mins)",
+    "ctaSecondary": "Explore Case Studies",
+    "stat1Value": "99.9%",
+    "stat1Label": "Guaranteed Uptime",
+    "stat2Value": "3.5x",
+    "stat2Label": "Avg Conversion Boost",
+    "stat3Value": "< 1s",
+    "stat3Label": "Ultra-fast Page Load"
+  },
+  "problem": {
+    "badge": "The Reality",
+    "title": "A passive website is no longer enough to dominate your market",
+    "subtitle": "Modern companies lose valuable prospects daily due to sluggish tools, disjointed manual processes, and zero intelligence integration.",
+    "card1Title": "Static & Slow Websites",
+    "card1Desc": "Clunky pages that fail to convert high-intent visitors and dilute your brand authority.",
+    "card2Title": "Time-Draining Manual Workflows",
+    "card2Desc": "Hours wasted copying chats, scattered spreadsheets, and missed customer follow-ups.",
+    "card3Title": "Generic Off-the-Shelf Tools",
+    "card3Desc": "Rigid software that forces your team to adapt to its constraints instead of serving your business."
+  },
+  "divisions": {
+    "badge": "Our 4 Divisions",
+    "title": "End-to-end expertise for every stage of your growth",
+    "subtitle": "From high-converting brand platforms to intelligent operating software.",
+    "web": {
+      "tag": "Division 01",
+      "name": "WEB",
+      "tagline": "Elite Digital Presence",
+      "desc": "Ultra-fast showcase websites, obsidian visual elegance, and compelling storytelling engineered to cement your authority and capture high-value clients.",
+      "features": ["Obsidian Design & Modern Typography", "Core Web Vitals < 1s", "Technical & International SEO", "100% Responsive & Fluid"]
+    },
+    "business": {
+      "tag": "Division 02",
+      "name": "BUSINESS",
+      "tagline": "Dynamic Platforms & Content",
+      "desc": "Scalable web ecosystems equipped with lightweight headless CMS, high-ranking blogs, and seamless analytics & marketing integrations.",
+      "features": ["Zero-friction CMS experience", "Conversion-oriented blog architecture", "Smart interactive forms & analytics", "Native multilingual EN / FR"]
+    },
+    "systems": {
+      "tag": "Division 03",
+      "name": "SYSTEMS",
+      "tagline": "Custom Software & SaaS",
+      "desc": "Bespoke operational web apps tailored to digitize your core workflows: booking engines, client dashboards, CRMs, and internal business tools.",
+      "features": ["Real-time client portals & dashboards", "Custom booking & workflow engines", "High-security PostgreSQL / Supabase", "Scalable modular architecture"]
+    },
+    "ai": {
+      "tag": "Division 04",
+      "name": "AI & AUTOMATION",
+      "tagline": "Applied Artificial Intelligence",
+      "desc": "Intelligent conversational bots, 24/7 lead qualification assistants, automated WhatsApp flows, and backend workflow integrations.",
+      "features": ["24/7 AI Lead Qualification Assistant", "Instant WhatsApp & Mobile Push alerts", "Groq / LLaMA 3.3 LLM Integration", "Sub-minute customer response times"]
+    }
+  },
+  "care": {
+    "badge": "Recurring Retainer",
+    "title": "ORION CARE — Your digital infrastructure on 24/7 autopilot",
+    "subtitle": "A continuous partnership ensuring your systems remain secure, fast, and continuously evolving alongside your business.",
+    "plan1Name": "Essential",
+    "plan1Price": "Custom",
+    "plan1Desc": "High-availability managed hosting, automated daily backups, and critical security patches.",
+    "plan2Name": "Growth",
+    "plan2Price": "Recommended",
+    "plan2Desc": "Everything in Essential + performance monitoring, monthly SEO audits, and priority support.",
+    "plan3Name": "Scale",
+    "plan3Price": "Enterprise",
+    "plan3Desc": "Everything in Growth + dedicated monthly product iteration hours and continuous AI upgrades.",
+    "cta": "Subscribe to ORION CARE"
+  },
+  "method": {
+    "badge": "Our Method",
+    "title": "A 4-step surgical execution process",
+    "subtitle": "No endless meetings or vague promises: just a transparent, battle-tested framework.",
+    "step1Num": "01",
+    "step1Title": "Discovery & Strategy",
+    "step1Desc": "In-depth audit of your business model, identifying friction points, and locking precise technical blueprints.",
+    "step2Num": "02",
+    "step2Title": "Architecture & Prototyping",
+    "step2Desc": "Crafting bespoke UI/UX, validating user journeys, and structuring high-performance databases.",
+    "step3Num": "03",
+    "step3Title": "Engineering & Rigorous QA",
+    "step3Desc": "Clean code with Next.js, Supabase, and Tailwind. Performance, security, and accessibility testing.",
+    "step4Num": "04",
+    "step4Title": "Deployment & Ongoing Care",
+    "step4Desc": "Live edge deployment on Vercel, team handover, and activation of ORION CARE maintenance."
+  },
+  "work": {
+    "badge": "Case Studies",
+    "title": "Measurable impact for ambitious leaders",
+    "subtitle": "Explore how we turned complex operational hurdles into strategic competitive advantages.",
+    "viewCase": "View Case Study",
+    "case1Category": "SYSTEMS & BOOKING",
+    "case1Title": "Private Medical Clinic",
+    "case1Problem": "Phone booking gridlock, patient record scatter, and high appointment no-show rates.",
+    "case1Solution": "HIPAA-grade web portal with instant online booking, automated SMS/WhatsApp reminders, and practitioner dashboards.",
+    "case1Result": "+140% online reservations, 65% drop in unanswered front-desk calls.",
+    "case2Category": "AI & AUTOMATION",
+    "case2Title": "Regional Logistics & Supply",
+    "case2Problem": "Leads lost overnight, manual quote generation taking over 24 hours.",
+    "case2Solution": "Autonomous AI assistant on WhatsApp & Web capturing freight specs and instantly notifying sales reps.",
+    "case2Result": "First-response latency dropped from 4 hours to 8 seconds; quote conversions up 48%.",
+    "case3Category": "WEB & BUSINESS",
+    "case3Title": "Elite Academic Complex",
+    "case3Problem": "Outdated web presence failing to reflect high academic prestige; paper-based enrollment bottlenecks.",
+    "case3Solution": "Bilingual showcase platform featuring interactive virtual tours and digital pre-registration modules.",
+    "case3Result": "85% surge in verified pre-enrollment applications."
+  },
+  "about": {
+    "badge": "Our Philosophy",
+    "title": "Building beyond conventional limits",
+    "subtitle": "ORION was created on one clear conviction: ambitious companies across Africa and worldwide deserve world-class digital systems.",
+    "storyP1": "Founded by BK Global Technologies in Cotonou, Benin, ORION unites rigorous software engineering, obsidian aesthetics, and applied artificial intelligence.",
+    "storyP2": "We don't just ship code: we build high-leverage strategic assets that embed into your core operations and generate tangible ROI from day one.",
+    "value1Title": "Zero compromise on quality",
+    "value1Desc": "Every line of code is optimized for velocity, robustness, and bulletproof security.",
+    "value2Title": "ROI & Business-First",
+    "value2Desc": "Technology is a vehicle: your revenue growth and efficiency are our true north.",
+    "value3Title": "Speed & Transparency",
+    "value3Desc": "Crisp milestones, clear communication, and zero technical jargon."
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Ready to scale your business into the next dimension?",
+    "subtitle": "Chat with our AI assistant for an immediate qualification or send our engineering team a message.",
+    "formName": "Full Name",
+    "formNamePlaceholder": "Josias K.",
+    "formEmail": "Work Email",
+    "formEmailPlaceholder": "contact@your-business.com",
+    "formWhatsapp": "WhatsApp / Phone Number",
+    "formWhatsappPlaceholder": "+229 00 00 00 00",
+    "formCompany": "Company Name",
+    "formCompanyPlaceholder": "Acme Corp",
+    "formDivision": "Target Division",
+    "formMessage": "Tell us about your project",
+    "formMessagePlaceholder": "Briefly describe your objectives, timeline, and vision...",
+    "formSubmit": "Submit Project Request",
+    "formSuccess": "Thank you! Your inquiry has been received. An ORION lead architect will follow up within 24 hours.",
+    "chatAlternativeTitle": "Need an instant evaluation?",
+    "chatAlternativeDesc": "Our AI qualification assistant can analyze your specs and estimate your roadmap in under 2 minutes.",
+    "openChat": "Launch Interactive AI Chat"
+  },
+  "chatWidget": {
+    "headerTitle": "ORION Assistant",
+    "headerStatus": "Online • Instant Response",
+    "welcomeMessage": "Hello! I am the ORION qualification assistant. What type of digital system are you looking to build (web showcase, custom portal, automation or AI)?",
+    "inputPlaceholder": "Describe your project...",
+    "send": "Send",
+    "quick1": "Build a modern showcase site",
+    "quick2": "Develop custom software / portal",
+    "quick3": "AI Automation & WhatsApp bot"
+  },
+  "footer": {
+    "tagline": "Digital systems for ambitious businesses.",
+    "copyright": "© 2026 ORION by BK Global Technologies. All rights reserved.",
+    "quickLinks": "Navigation",
+    "divisions": "Divisions",
+    "legal": "Legal Notices",
+    "privacy": "Privacy Policy",
+    "location": "Cotonou, Benin • Global Delivery"
+  }
+}
