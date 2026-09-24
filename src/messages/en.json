@@ -1,136 +1,165 @@
 {
   "nav": {
-    "home": "Home",
     "services": "Services",
-    "work": "Work",
-    "about": "About",
-    "startProject": "Start a Project"
+    "process": "Process",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "startProject": "Start a project"
   },
   "hero": {
-    "badge": "Digital Transformation Studio",
-    "titleLine1": "We engineer",
-    "titleGradient": "digital systems",
-    "titleLine2": "for ambitious businesses.",
-    "subtitle": "Beyond traditional websites: we craft high-velocity web platforms, bespoke business applications, and AI automations that scale your operations and drive measurable ROI.",
-    "ctaPrimary": "Estimate My Project (2 mins)",
-    "ctaSecondary": "Explore Case Studies",
-    "stat1Value": "99.9%",
-    "stat1Label": "Guaranteed Uptime",
-    "stat2Value": "3.5x",
-    "stat2Label": "Avg Conversion Boost",
-    "stat3Value": "< 1s",
-    "stat3Label": "Ultra-fast Page Load"
+    "eyebrow": "Digital systems for ambitious businesses",
+    "title": "Turn your business into a digital business.",
+    "copy": "We design and build websites, web apps, automation and AI systems that help businesses attract customers, work smarter and grow.",
+    "ctaPrimary": "Start your project",
+    "ctaSecondary": "See what we build",
+    "micro": "From first idea to fully deployed digital system."
+  },
+  "proof": {
+    "web": { "label": "Websites", "sub": "Digital experiences" },
+    "apps": { "label": "Web Apps", "sub": "Business software" },
+    "automation": { "label": "Automation", "sub": "Smarter workflows" },
+    "ai": { "label": "AI", "sub": "Intelligent systems" }
   },
   "problem": {
-    "badge": "The Reality",
-    "title": "A passive website is no longer enough to dominate your market",
-    "subtitle": "Modern companies lose valuable prospects daily due to sluggish tools, disjointed manual processes, and zero intelligence integration.",
-    "card1Title": "Static & Slow Websites",
-    "card1Desc": "Clunky pages that fail to convert high-intent visitors and dilute your brand authority.",
-    "card2Title": "Time-Draining Manual Workflows",
-    "card2Desc": "Hours wasted copying chats, scattered spreadsheets, and missed customer follow-ups.",
-    "card3Title": "Generic Off-the-Shelf Tools",
-    "card3Desc": "Rigid software that forces your team to adapt to its constraints instead of serving your business."
+    "eyebrow": "The old way → The Orion way",
+    "title": "Your business shouldn't be held back by outdated systems.",
+    "oldWayTitle": "The old way",
+    "oldWayItems": [
+      "Customers can't easily find you",
+      "Your website doesn't represent your business",
+      "Too much work is done manually",
+      "Your tools don't communicate with each other",
+      "Opportunities are lost between conversations"
+    ],
+    "newWayTitle": "The Orion way",
+    "newWayItems": [
+      "Your business is accessible 24/7",
+      "Your digital presence builds trust",
+      "Repetitive work gets automated",
+      "Your tools work together",
+      "Your customers have a clear path to action"
+    ],
+    "statementLead": "We don't just make things look better.",
+    "statementStrong": "We build systems that work better."
   },
-  "divisions": {
-    "badge": "Our 4 Divisions",
-    "title": "End-to-end expertise for every stage of your growth",
-    "subtitle": "From high-converting brand platforms to intelligent operating software.",
-    "web": {
-      "tag": "Division 01",
-      "name": "WEB",
-      "tagline": "Elite Digital Presence",
-      "desc": "Ultra-fast showcase websites, obsidian visual elegance, and compelling storytelling engineered to cement your authority and capture high-value clients.",
-      "features": ["Obsidian Design & Modern Typography", "Core Web Vitals < 1s", "Technical & International SEO", "100% Responsive & Fluid"]
+  "services": {
+    "eyebrow": "More than a website",
+    "title": "Everything you need to build your digital presence.",
+    "subtitle": "Start with what your business needs today. Build the next layer when you're ready.",
+    "items": [
+      { "num": "01 — WEB", "title": "A professional presence", "desc": "Websites designed to make your business credible, clear and easy to reach." },
+      { "num": "02 — APPS", "title": "A system built around your business", "desc": "Custom web applications, dashboards and portals built around your operations." },
+      { "num": "03 — AUTOMATION", "title": "Less repetitive work", "desc": "Connect your tools and automate workflows that consume your team's time." },
+      { "num": "04 — AI", "title": "Intelligence that works", "desc": "AI assistants and workflows that help your team serve customers and operate faster." }
+    ]
+  },
+  "benefits": {
+    "eyebrow": "What changes",
+    "title": "Built for results you can see.",
+    "items": [
+      { "title": "Be easier to find.", "desc": "Give customers a professional place to discover your business, products and services." },
+      { "title": "Turn attention into action.", "desc": "Guide visitors toward the action that matters: call, message, book, buy or request." },
+      { "title": "Spend less time on repetitive work.", "desc": "Automate tasks that slow your team down and connect the tools you already use." },
+      { "title": "Be ready for what's next.", "desc": "Your first website can become a complete digital system as your business grows." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "From idea to digital system.",
+    "steps": [
+      { "title": "Discover", "desc": "We learn what you do, who you serve, what isn't working and what you want to achieve." },
+      { "title": "Design", "desc": "We structure the content, user journey and interface around your business goals." },
+      { "title": "Build", "desc": "We develop, test and deploy your website or digital system using modern technology." },
+      { "title": "Evolve", "desc": "After launch, Orion can maintain, improve, automate and expand your digital infrastructure." }
+    ]
+  },
+  "offer": {
+    "eyebrow": "The offer",
+    "title": "Go from \u201cwe need a website\u201d to \u201cwe're online\u201d in 7 days.",
+    "name": "ORION LAUNCH",
+    "intro": "A professionally designed, mobile-first website built around your business and ready to turn visitors into customers.",
+    "checks": [
+      "Custom design",
+      "Up to 5 pages",
+      "Conversion-focused structure",
+      "Mobile-first experience",
+      "SEO foundation",
+      "Domain & deployment",
+      "Analytics",
+      "Full handover"
+    ],
+    "deliveryLabel": "Delivery",
+    "deliveryValue": "7 days",
+    "deliveryNote": "Once all required content and information are available.",
+    "price": "250,000 FCFA",
+    "priceNote": "Starting price",
+    "cta": "Start with Orion Launch"
+  },
+  "why": {
+    "eyebrow": "Why Orion",
+    "title": "Not just another web agency.",
+    "diffs": [
+      { "title": "Business first", "desc": "We start with the problem, not the technology." },
+      { "title": "Conversion first", "desc": "A beautiful website is useless if it doesn't help your business move forward." },
+      { "title": "Built to grow", "desc": "Your first digital product shouldn't become your last." },
+      { "title": "One digital partner", "desc": "Website today. Automation, applications and AI tomorrow." }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Choose your starting point",
+    "title": "Start where your business is. Grow when you're ready.",
+    "tiers": {
+      "launch": {
+        "name": "LAUNCH",
+        "price": "250k FCFA",
+        "desc": "For businesses that need to get online professionally.",
+        "features": ["Up to 5 pages", "Custom design", "Mobile responsive", "WhatsApp / contact integration", "Basic SEO", "Analytics", "Domain & deployment", "7-day delivery"],
+        "cta": "Get started"
+      },
+      "grow": {
+        "name": "GROW",
+        "price": "500k FCFA",
+        "desc": "For businesses ready to turn their website into a growth tool.",
+        "features": ["Up to 10 pages", "CMS", "Advanced forms", "Blog / content", "Product or service catalog", "Advanced SEO", "Analytics", "Conversion optimization", "Integrations", "10\u201314 day delivery"],
+        "cta": "Build for growth"
+      },
+      "system": {
+        "name": "SYSTEM",
+        "price": "Custom",
+        "desc": "For businesses that need software, automation or AI.",
+        "features": ["Web applications", "Dashboards", "Customer portals", "Booking systems", "Payments", "CRM", "Automation", "AI integrations", "Custom business systems"],
+        "cta": "Talk to Orion"
+      }
     },
-    "business": {
-      "tag": "Division 02",
-      "name": "BUSINESS",
-      "tagline": "Dynamic Platforms & Content",
-      "desc": "Scalable web ecosystems equipped with lightweight headless CMS, high-ranking blogs, and seamless analytics & marketing integrations.",
-      "features": ["Zero-friction CMS experience", "Conversion-oriented blog architecture", "Smart interactive forms & analytics", "Native multilingual EN / FR"]
-    },
-    "systems": {
-      "tag": "Division 03",
-      "name": "SYSTEMS",
-      "tagline": "Custom Software & SaaS",
-      "desc": "Bespoke operational web apps tailored to digitize your core workflows: booking engines, client dashboards, CRMs, and internal business tools.",
-      "features": ["Real-time client portals & dashboards", "Custom booking & workflow engines", "High-security PostgreSQL / Supabase", "Scalable modular architecture"]
-    },
-    "ai": {
-      "tag": "Division 04",
-      "name": "AI & AUTOMATION",
-      "tagline": "Applied Artificial Intelligence",
-      "desc": "Intelligent conversational bots, 24/7 lead qualification assistants, automated WhatsApp flows, and backend workflow integrations.",
-      "features": ["24/7 AI Lead Qualification Assistant", "Instant WhatsApp & Mobile Push alerts", "Groq / LLaMA 3.3 LLM Integration", "Sub-minute customer response times"]
+    "care": {
+      "eyebrow": "After launch",
+      "title": "Your website shouldn't be abandoned after launch.",
+      "subtitle": "Keep your digital infrastructure secure, updated and evolving with your business.",
+      "essential": { "name": "CARE ESSENTIAL", "price": "25k / month", "desc": "Hosting, SSL, backups, monitoring and maintenance." },
+      "growth": { "name": "CARE GROWTH", "price": "50k / month", "desc": "Everything in Essential + content updates, optimization and monthly reporting." },
+      "scale": { "name": "CARE SCALE", "price": "100k+ / month", "desc": "Priority support, development, automation and continuous improvements." }
     }
   },
-  "care": {
-    "badge": "Recurring Retainer",
-    "title": "ORION CARE — Your digital infrastructure on 24/7 autopilot",
-    "subtitle": "A continuous partnership ensuring your systems remain secure, fast, and continuously evolving alongside your business.",
-    "plan1Name": "Essential",
-    "plan1Desc": "High-availability managed hosting, automated daily backups, and critical security patches.",
-    "plan2Name": "Growth",
-    "plan2Desc": "Everything in Essential + performance monitoring, monthly SEO audits, and priority support.",
-    "plan3Name": "Scale",
-    "plan3Desc": "Everything in Growth + dedicated monthly product iteration hours and continuous AI upgrades.",
-    "cta": "Subscribe to ORION CARE"
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions? We've got answers.",
+    "items": [
+      { "q": "How long does it take to build a website?", "a": "Most Orion Launch websites are delivered within 7 days, provided that all required content and information are available." },
+      { "q": "Do you use templates?", "a": "We use proven design systems where appropriate, but every project is structured around your business, audience and objectives." },
+      { "q": "Do I own my website?", "a": "Yes. Your website and business content belong to you. Orion can continue to host and maintain it through an optional care plan." },
+      { "q": "Can you redesign my existing website?", "a": "Yes. We can redesign, rebuild or improve an existing website depending on its condition and your objectives." },
+      { "q": "Can you build e-commerce?", "a": "Yes. E-commerce projects are handled as custom projects depending on your catalog, payments, shipping and required features." },
+      { "q": "Can you build a web application?", "a": "Yes. Orion builds custom web applications, dashboards, portals and business systems." },
+      { "q": "Do you work outside Benin?", "a": "Yes. Orion works remotely with businesses across Africa and internationally." },
+      { "q": "Can you integrate AI into my business?", "a": "Yes. We can integrate AI assistants, automation, customer support, document processing and other AI-powered workflows." }
+    ]
   },
-  "method": {
-    "badge": "Our Method",
-    "title": "A 4-step surgical execution process",
-    "subtitle": "No endless meetings or vague promises: just a transparent, battle-tested framework.",
-    "step1Num": "01",
-    "step1Title": "Discovery & Strategy",
-    "step1Desc": "In-depth audit of your business model, identifying friction points, and locking precise technical blueprints.",
-    "step2Num": "02",
-    "step2Title": "Architecture & Prototyping",
-    "step2Desc": "Crafting bespoke UI/UX, validating user journeys, and structuring high-performance databases.",
-    "step3Num": "03",
-    "step3Title": "Engineering & Rigorous QA",
-    "step3Desc": "Clean code with Next.js, Supabase, and Tailwind. Performance, security, and accessibility testing.",
-    "step4Num": "04",
-    "step4Title": "Deployment & Ongoing Care",
-    "step4Desc": "Live edge deployment on Vercel, team handover, and activation of ORION CARE maintenance."
-  },
-  "work": {
-    "badge": "Case Studies",
-    "title": "Measurable impact for ambitious leaders",
-    "subtitle": "Explore how we turned complex operational hurdles into strategic competitive advantages.",
-    "case1Category": "SYSTEMS & BOOKING",
-    "case1Title": "Private Medical Clinic",
-    "case1Problem": "Phone booking gridlock, patient record scatter, and high appointment no-show rates.",
-    "case1Solution": "HIPAA-grade web portal with instant online booking, automated SMS/WhatsApp reminders, and practitioner dashboards.",
-    "case1Result": "+140% online reservations, 65% drop in unanswered front-desk calls.",
-    "case2Category": "AI & AUTOMATION",
-    "case2Title": "Regional Logistics & Supply",
-    "case2Problem": "Leads lost overnight, manual quote generation taking over 24 hours.",
-    "case2Solution": "Autonomous AI assistant on WhatsApp & Web capturing freight specs and instantly notifying sales reps.",
-    "case2Result": "First-response latency dropped from 4 hours to 8 seconds; quote conversions up 48%.",
-    "case3Category": "WEB & BUSINESS",
-    "case3Title": "Elite Academic Complex",
-    "case3Problem": "Outdated web presence failing to reflect high academic prestige; paper-based enrollment bottlenecks.",
-    "case3Solution": "Bilingual showcase platform featuring interactive virtual tours and digital pre-registration modules.",
-    "case3Result": "85% surge in verified pre-enrollment applications."
-  },
-  "about": {
-    "badge": "Our Philosophy",
-    "title": "Building beyond conventional limits",
-    "subtitle": "ORION was created on one clear conviction: ambitious companies across Africa and worldwide deserve world-class digital systems.",
-    "storyP1": "Founded by BK Global Technologies in Cotonou, Benin, ORION unites rigorous software engineering, obsidian aesthetics, and applied artificial intelligence.",
-    "storyP2": "We don't just ship code: we build high-leverage strategic assets that embed into your core operations and generate tangible ROI from day one.",
-    "value1Title": "Zero compromise on quality",
-    "value1Desc": "Every line of code is optimized for velocity, robustness, and bulletproof security.",
-    "value2Title": "ROI & Business-First",
-    "value2Desc": "Technology is a vehicle: your revenue growth and efficiency are our true north.",
-    "value3Title": "Speed & Transparency",
-    "value3Desc": "Crisp milestones, clear communication, and zero technical jargon."
-  },
-  "contact": {
-    "title": "Ready to scale your business into the next dimension?",
-    "subtitle": "Chat with our AI assistant for an immediate qualification of your project.",
-    "formSubmit": "Chat with the AI Assistant"
+  "final": {
+    "eyebrow": "Start building",
+    "title": "Your business has a next step. Let's build it.",
+    "subtitle": "Tell us what you're trying to achieve. We'll figure out what needs to be built.",
+    "cta": "Start your project",
+    "micro": "No commitment. Tell us what you need."
   },
   "chatWidget": {
     "headerTitle": "ORION Assistant",
@@ -142,12 +171,7 @@
     "quick3": "AI Automation & WhatsApp bot"
   },
   "footer": {
-    "tagline": "Digital systems for ambitious businesses.",
-    "copyright": "© 2026 ORION by BK Global Technologies. All rights reserved.",
-    "quickLinks": "Navigation",
-    "divisions": "Divisions",
-    "legal": "Legal Notices",
-    "privacy": "Privacy Policy",
-    "location": "Cotonou, Benin • Global Delivery"
+    "copyright": "© 2026 ORION — Build beyond.",
+    "tagline": "Web · Apps · Automation · AI"
   }
 }

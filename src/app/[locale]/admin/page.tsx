@@ -50,30 +50,29 @@ export default function AdminContactsPage() {
   }, []);
 
   const getDivisionBadge = (division: string) => {
-    switch (division) {
-      case "web":
-        return <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-violet-500/10 text-violet-400 border border-violet-500/20">WEB</span>;
-      case "business":
-        return <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">BUSINESS</span>;
-      case "systems":
-        return <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">SYSTEMS</span>;
-      case "ai_automation":
-        return <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20">AI & AUTO</span>;
-      default:
-        return <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-slate-500/10 text-slate-400 border border-slate-500/20">{division}</span>;
-    }
+    const labels: Record<string, string> = {
+      web: "WEB",
+      apps: "APPS",
+      automation: "AUTOMATION",
+      ai: "AI",
+    };
+    return (
+      <span className="rounded-full border border-lime/25 bg-lime/10 px-2.5 py-1 text-[11px] font-bold text-lime">
+        {labels[division] || division}
+      </span>
+    );
   };
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-obsidian">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-ink pb-20 pt-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Top Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-obsidian-border mb-8">
+        <div className="mb-8 flex flex-col justify-between gap-6 border-b border-line pb-8 md:flex-row md:items-center">
           <div>
-            <h1 className="font-heading font-extrabold text-3xl text-white">
+            <h1 className="text-3xl font-[760] tracking-[-0.03em] text-white">
               Contacts Visiteurs
             </h1>
-            <p className="text-slate-400 text-sm mt-1">
+            <p className="mt-1 text-sm text-muted">
               Coordonnées et détails des visiteurs qualifiés par le chatbot du site.
             </p>
           </div>
@@ -82,26 +81,26 @@ export default function AdminContactsPage() {
             type="button"
             onClick={fetchLeads}
             disabled={loading}
-            className="p-2.5 rounded-xl bg-obsidian-card border border-obsidian-border text-slate-300 hover:text-white hover:border-slate-600 transition-all flex items-center gap-2 text-xs font-semibold self-start md:self-auto"
+            className="flex items-center gap-2 self-start rounded-xl border border-line bg-surface-card px-3 py-2.5 text-xs font-semibold text-[#ccc] transition-all hover:border-[#555] hover:text-white md:self-auto"
           >
-            <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+            <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
             <span>Actualiser</span>
           </button>
         </div>
 
         {/* Main Content: Contacts List + Detail View */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
           {/* Contacts List (7 cols) */}
-          <div className="lg:col-span-7 space-y-4">
-            <h2 className="font-heading font-bold text-lg text-white flex items-center justify-between">
+          <div className="space-y-4 lg:col-span-7">
+            <h2 className="flex items-center justify-between text-lg font-bold text-white">
               <span>Derniers Contacts</span>
-              <span className="text-xs text-slate-400 font-normal">
+              <span className="text-xs font-normal text-muted">
                 {leads.length} contact{leads.length > 1 ? "s" : ""}
               </span>
             </h2>
 
             {leads.length === 0 && !loading && (
-              <div className="p-8 rounded-3xl bg-obsidian-card border border-obsidian-border text-center text-slate-400 text-sm">
+              <div className="rounded-2xl border border-line bg-surface-card p-8 text-center text-sm text-muted">
                 Aucun contact pour le moment. Dès qu'un visiteur laisse ses coordonnées via le chatbot, il apparaîtra ici.
               </div>
             )}
@@ -112,20 +111,20 @@ export default function AdminContactsPage() {
                 <div
                   key={lead.id}
                   onClick={() => setSelectedLead(lead)}
-                  className={`p-5 rounded-2xl border cursor-pointer transition-all ${
+                  className={`cursor-pointer rounded-2xl border p-5 transition-all ${
                     isSelected
-                      ? "bg-obsidian-surface border-violet-electric shadow-violet"
-                      : "bg-obsidian-card border-obsidian-border hover:border-slate-700"
+                      ? "border-lime bg-surface-2 shadow-[0_0_25px_-8px_rgba(200,255,69,0.35)]"
+                      : "border-line bg-surface-card hover:border-[#444]"
                   }`}
                 >
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="mb-3 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="font-heading font-bold text-white text-base">
+                      <span className="text-base font-bold text-white">
                         {lead.name}
                       </span>
                       {getDivisionBadge(lead.division)}
                     </div>
-                    <span className="text-[11px] text-slate-500">
+                    <span className="text-[11px] text-muted-2">
                       {new Date(lead.created_at).toLocaleDateString("fr-FR", {
                         day: "2-digit",
                         month: "short",
@@ -135,18 +134,18 @@ export default function AdminContactsPage() {
                     </span>
                   </div>
 
-                  <p className="text-slate-300 text-xs line-clamp-2 mb-3">
+                  <p className="mb-3 line-clamp-2 text-xs text-[#aaa]">
                     {lead.need_summary}
                   </p>
 
-                  <div className="flex items-center justify-between text-xs pt-3 border-t border-obsidian-border/60">
-                    <div className="flex items-center gap-1.5 text-slate-400">
-                      <Phone className="w-3.5 h-3.5 text-violet-glow" />
+                  <div className="flex items-center justify-between border-t border-line/60 pt-3 text-xs">
+                    <div className="flex items-center gap-1.5 text-muted">
+                      <Phone className="h-3.5 w-3.5 text-lime" />
                       <span>{lead.email_or_whatsapp}</span>
                     </div>
 
-                    <div className="flex items-center gap-1 text-emerald-400 font-semibold">
-                      <CheckCircle className="w-3.5 h-3.5" />
+                    <div className="flex items-center gap-1 font-semibold text-emerald-400">
+                      <CheckCircle className="h-3.5 w-3.5" />
                       <span className="capitalize">{lead.status}</span>
                     </div>
                   </div>
@@ -156,19 +155,19 @@ export default function AdminContactsPage() {
           </div>
 
           {/* Contact Detail (5 cols) */}
-          <div className="lg:col-span-5 sticky top-28">
+          <div className="sticky top-28 lg:col-span-5">
             {selectedLead ? (
-              <div className="p-6 rounded-3xl bg-obsidian-card border border-obsidian-border shadow-2xl space-y-6">
-                <div className="flex items-center justify-between pb-4 border-b border-obsidian-border">
+              <div className="space-y-6 rounded-2xl border border-line bg-surface-card p-6 shadow-2xl">
+                <div className="flex items-center justify-between border-b border-line pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-violet-electric/20 border border-violet-glow/40 flex items-center justify-center text-violet-glow">
-                      <User className="w-5 h-5" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-lime/40 bg-lime/10 text-lime">
+                      <User className="h-5 w-5" />
                     </div>
                     <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+                      <span className="block text-[10px] font-bold uppercase tracking-wider text-muted">
                         Fiche Contact
                       </span>
-                      <h3 className="font-heading font-bold text-xl text-white">
+                      <h3 className="text-xl font-bold text-white">
                         {selectedLead.name}
                       </h3>
                     </div>
@@ -178,10 +177,10 @@ export default function AdminContactsPage() {
 
                 <div className="space-y-4">
                   <div>
-                    <label className="text-[11px] uppercase font-semibold text-slate-400 block mb-1">
+                    <label className="mb-1 block text-[11px] font-semibold uppercase text-muted">
                       Coordonnées de Contact
                     </label>
-                    <div className="p-3 rounded-xl bg-obsidian-surface border border-obsidian-border text-white text-sm font-mono flex items-center justify-between gap-2">
+                    <div className="flex items-center justify-between gap-2 rounded-xl border border-line bg-surface-2 p-3 font-mono text-sm text-white">
                       <span className="truncate">{selectedLead.email_or_whatsapp}</span>
                       <a
                         href={
@@ -191,7 +190,7 @@ export default function AdminContactsPage() {
                         }
                         target="_blank"
                         rel="noreferrer"
-                        className="px-2.5 py-1 rounded bg-violet-electric text-white text-xs font-semibold hover:bg-violet-hover shrink-0"
+                        className="shrink-0 rounded px-2.5 py-1 text-xs font-semibold text-[#080808] bg-lime hover:bg-lime-dark"
                       >
                         Contacter
                       </a>
@@ -199,17 +198,17 @@ export default function AdminContactsPage() {
                   </div>
 
                   <div>
-                    <label className="text-[11px] uppercase font-semibold text-slate-400 block mb-1">
+                    <label className="mb-1 block text-[11px] font-semibold uppercase text-muted">
                       Résumé du Besoin (IA)
                     </label>
-                    <div className="p-3.5 rounded-xl bg-obsidian-surface border border-obsidian-border text-slate-200 text-xs leading-relaxed">
+                    <div className="rounded-xl border border-line bg-surface-2 p-3.5 text-xs leading-relaxed text-[#ccc]">
                       {selectedLead.need_summary}
                     </div>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="p-3 rounded-xl bg-obsidian-surface border border-obsidian-border">
-                      <span className="text-[10px] uppercase text-slate-400 block mb-1">
+                    <div className="rounded-xl border border-line bg-surface-2 p-3">
+                      <span className="mb-1 block text-[10px] uppercase text-muted">
                         Budget Estimé
                       </span>
                       <span className="text-xs font-bold text-emerald-400">
@@ -217,21 +216,21 @@ export default function AdminContactsPage() {
                       </span>
                     </div>
 
-                    <div className="p-3 rounded-xl bg-obsidian-surface border border-obsidian-border">
-                      <span className="text-[10px] uppercase text-slate-400 block mb-1">
+                    <div className="rounded-xl border border-line bg-surface-2 p-3">
+                      <span className="mb-1 block text-[10px] uppercase text-muted">
                         Délai Souhaité
                       </span>
-                      <span className="text-xs font-bold text-violet-glow">
+                      <span className="text-xs font-bold text-lime">
                         {selectedLead.timeline || "Non précisé"}
                       </span>
                     </div>
                   </div>
 
                   <div>
-                    <span className="text-[10px] uppercase text-slate-400 block mb-1">
+                    <span className="mb-1 block text-[10px] uppercase text-muted">
                       Reçu le
                     </span>
-                    <span className="text-xs text-slate-300">
+                    <span className="text-xs text-[#ccc]">
                       {new Date(selectedLead.created_at).toLocaleString("fr-FR", {
                         dateStyle: "long",
                         timeStyle: "short",
@@ -241,7 +240,7 @@ export default function AdminContactsPage() {
                 </div>
               </div>
             ) : (
-              <div className="p-8 rounded-3xl bg-obsidian-card border border-obsidian-border text-center text-slate-400 text-sm">
+              <div className="rounded-2xl border border-line bg-surface-card p-8 text-center text-sm text-muted">
                 Sélectionnez un contact dans la liste pour afficher ses détails.
               </div>
             )}

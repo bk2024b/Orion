@@ -1,64 +1,50 @@
 import { useTranslations } from "next-intl";
-import { AlertCircle, Clock, Cpu, TrendingDown } from "lucide-react";
 
 export default function ProblemSection() {
   const t = useTranslations("problem");
-
-  const painPoints = [
-    {
-      icon: TrendingDown,
-      title: t("card1Title"),
-      desc: t("card1Desc"),
-    },
-    {
-      icon: Clock,
-      title: t("card2Title"),
-      desc: t("card2Desc"),
-    },
-    {
-      icon: Cpu,
-      title: t("card3Title"),
-      desc: t("card3Desc"),
-    },
-  ];
+  const oldWayItems = t.raw("oldWayItems") as string[];
+  const newWayItems = t.raw("newWayItems") as string[];
 
   return (
-    <section className="py-20 md:py-28 bg-obsidian-200/50 border-y border-obsidian-border relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-xs font-semibold text-rose-400 mb-4">
-            <AlertCircle className="w-3.5 h-3.5" />
-            <span>{t("badge")}</span>
+    <section className="border-b border-line py-20 md:py-[105px]">
+      <div className="mx-auto w-[calc(100%-40px)] max-w-content">
+        <div className="mb-10 max-w-[820px] md:mb-[52px]">
+          <div className="mb-5 text-[10px] font-extrabold uppercase tracking-[0.17em] text-lime">
+            {t("eyebrow")}
           </div>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-white mb-4">
+          <h2 className="text-[clamp(32px,5vw,64px)] font-[760] leading-[1.02] tracking-[-0.045em] sm:leading-[0.98] sm:tracking-[-0.055em]">
             {t("title")}
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
-            {t("subtitle")}
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {painPoints.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="p-8 rounded-2xl bg-obsidian-card border border-obsidian-border hover:border-slate-700 transition-all duration-300 relative group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-6 group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <h3 className="font-heading font-semibold text-xl text-white mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            );
-          })}
+        <div className="grid grid-cols-1 gap-px border border-line bg-line md:grid-cols-2">
+          <div className="bg-surface p-7 md:p-[43px]">
+            <h3 className="mb-6 text-xl font-semibold">{t("oldWayTitle")}</h3>
+            <ul className="grid gap-4 text-sm text-[#999]">
+              {oldWayItems.map((item, idx) => (
+                <li key={idx}>
+                  <span className="mr-3 text-[#777]">→</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="bg-gradient-to-br from-[#10160a] to-[#0a0a0a] p-7 md:p-[43px]">
+            <h3 className="mb-6 text-xl font-semibold">{t("newWayTitle")}</h3>
+            <ul className="grid gap-4 text-sm text-[#999]">
+              {newWayItems.map((item, idx) => (
+                <li key={idx}>
+                  <span className="mr-3 text-lime">→</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        <p className="mt-6 text-base text-[#aaa] sm:text-lg">
+          {t("statementLead")} <strong className="text-white">{t("statementStrong")}</strong>
+        </p>
       </div>
     </section>
   );

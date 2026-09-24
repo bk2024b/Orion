@@ -37,8 +37,8 @@ export const CREATE_LEAD_TOOL = {
       properties: {
         division: {
           type: "string",
-          enum: ["web", "business", "systems", "ai_automation"],
-          description: "La division ORION correspondant au besoin.",
+          enum: ["web", "apps", "automation", "ai"],
+          description: "Le service ORION correspondant au besoin : web (site vitrine), apps (application/logiciel métier), automation (automatisation de workflows), ai (projet IA).",
         },
         need_summary: {
           type: "string",

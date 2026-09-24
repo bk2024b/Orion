@@ -9,7 +9,6 @@ import {
   Sparkles,
   Bot,
   CheckCircle,
-  AlertCircle,
 } from "lucide-react";
 import { OPEN_CHAT_EVENT } from "./OpenChatButton";
 
@@ -142,78 +141,78 @@ export default function FloatingChatWidget() {
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-violet-electric to-violet-glow text-white font-semibold shadow-violet-lg hover:scale-105 transition-all duration-300"
+          className="group relative flex items-center gap-2.5 rounded-full bg-lime px-4 py-3 font-semibold text-[#080808] shadow-[0_0_25px_-5px_rgba(200,255,69,0.5)] transition-all duration-300 hover:scale-105"
           aria-label="Ouvrir le chat de qualification IA"
         >
-          <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping absolute -top-1 -right-1" />
-          <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 absolute -top-1 -right-1" />
-          <MessageSquare className="w-5 h-5 transition-transform group-hover:rotate-6" />
-          <span className="text-sm font-heading hidden sm:inline">
-            Échanger avec l'IA ORION
-          </span>
+          <div className="absolute -top-1 -right-1 h-2.5 w-2.5 animate-ping rounded-full bg-[#080808]/60" />
+          <div className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-[#080808]/60" />
+          <MessageSquare className="h-5 w-5 transition-transform group-hover:rotate-6" />
+          <span className="hidden text-sm sm:inline">Échanger avec l'IA ORION</span>
         </button>
       )}
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="w-[360px] sm:w-[400px] h-[540px] max-h-[85vh] rounded-2xl bg-obsidian-card border border-obsidian-border shadow-2xl flex flex-col overflow-hidden backdrop-blur-2xl animate-in zoom-in-95 duration-200">
+        <div className="flex h-[540px] max-h-[85vh] w-[360px] flex-col overflow-hidden rounded-2xl border border-line bg-[#0b0b0b] shadow-2xl sm:w-[400px]">
           {/* Header */}
-          <div className="p-4 bg-obsidian-surface border-b border-obsidian-border flex items-center justify-between">
+          <div className="flex items-center justify-between border-b border-line bg-surface-2 p-4">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="w-9 h-9 rounded-xl bg-violet-electric/20 border border-violet-glow/40 flex items-center justify-center text-violet-glow">
-                  <Bot className="w-5 h-5" />
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-lime/40 bg-lime/10 text-lime">
+                  <Bot className="h-5 w-5" />
                 </div>
-                <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute -bottom-0.5 -right-0.5 border-2 border-obsidian" />
+                <div className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-ink bg-emerald-500" />
               </div>
               <div>
-                <h3 className="text-sm font-semibold font-heading text-white flex items-center gap-1.5">
+                <h3 className="flex items-center gap-1.5 text-sm font-semibold text-white">
                   {t("headerTitle")}
-                  <Sparkles className="w-3.5 h-3.5 text-violet-glow" />
+                  <Sparkles className="h-3.5 w-3.5 text-lime" />
                 </h3>
-                <p className="text-[11px] text-slate-400">{t("headerStatus")}</p>
+                <p className="text-[11px] text-muted">{t("headerStatus")}</p>
               </div>
             </div>
             <button
               type="button"
               onClick={() => setIsOpen(false)}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-obsidian-border transition-colors"
+              className="rounded-lg p-1.5 text-muted transition-colors hover:bg-line hover:text-white"
             >
-              <X className="w-5 h-5" />
+              <X className="h-5 w-5" />
             </button>
           </div>
 
           {/* Lead Qualified Success Banner */}
           {leadQualified && (
-            <div className="bg-emerald-500/10 border-b border-emerald-500/20 px-4 py-2 flex items-center gap-2 text-xs text-emerald-400">
-              <CheckCircle className="w-4 h-4 shrink-0" />
+            <div className="flex items-center gap-2 border-b border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-xs text-emerald-400">
+              <CheckCircle className="h-4 w-4 shrink-0" />
               <span>Votre demande a été transmise à notre équipe !</span>
             </div>
           )}
 
           {/* Messages Feed */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-3.5 bg-obsidian/60">
+          <div className="flex-1 space-y-3.5 overflow-y-auto bg-ink/60 p-4">
             {messages.map((msg) => (
               <div
                 key={msg.id}
-                className={`flex gap-2.5 ${
-                  msg.role === "user" ? "justify-end" : "justify-start"
-                }`}
+                className={`flex gap-2.5 ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 {msg.role === "ai" && (
-                  <div className="w-7 h-7 rounded-lg bg-violet-electric/20 flex items-center justify-center text-violet-glow shrink-0 mt-0.5">
-                    <Bot className="w-4 h-4" />
+                  <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-lime/10 text-lime">
+                    <Bot className="h-4 w-4" />
                   </div>
                 )}
                 <div
-                  className={`max-w-[80%] rounded-2xl px-3.5 py-2.5 text-xs sm:text-sm leading-relaxed ${
+                  className={`max-w-[80%] rounded-2xl px-3.5 py-2.5 text-xs leading-relaxed sm:text-sm ${
                     msg.role === "user"
-                      ? "bg-violet-electric text-white rounded-tr-none shadow-violet"
-                      : "bg-obsidian-surface border border-obsidian-border text-slate-200 rounded-tl-none"
+                      ? "rounded-tr-none bg-lime text-[#080808]"
+                      : "rounded-tl-none border border-line bg-surface-2 text-[#ddd]"
                   }`}
                 >
                   <p className="whitespace-pre-wrap">{msg.text}</p>
-                  <span className="block text-[10px] text-slate-400 mt-1 text-right">
+                  <span
+                    className={`mt-1 block text-right text-[10px] ${
+                      msg.role === "user" ? "text-[#080808]/60" : "text-muted"
+                    }`}
+                  >
                     {msg.timestamp}
                   </span>
                 </div>
@@ -221,14 +220,14 @@ export default function FloatingChatWidget() {
             ))}
 
             {isTyping && (
-              <div className="flex gap-2.5 items-center">
-                <div className="w-7 h-7 rounded-lg bg-violet-electric/20 flex items-center justify-center text-violet-glow shrink-0">
-                  <Bot className="w-4 h-4" />
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-lime/10 text-lime">
+                  <Bot className="h-4 w-4" />
                 </div>
-                <div className="px-4 py-2 rounded-2xl bg-obsidian-surface border border-obsidian-border rounded-tl-none flex items-center gap-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-violet-glow animate-bounce" />
-                  <div className="w-1.5 h-1.5 rounded-full bg-violet-glow animate-bounce [animation-delay:0.2s]" />
-                  <div className="w-1.5 h-1.5 rounded-full bg-violet-glow animate-bounce [animation-delay:0.4s]" />
+                <div className="flex items-center gap-1 rounded-2xl rounded-tl-none border border-line bg-surface-2 px-4 py-2">
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-lime" />
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-lime [animation-delay:0.2s]" />
+                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-lime [animation-delay:0.4s]" />
                 </div>
               </div>
             )}
@@ -237,13 +236,13 @@ export default function FloatingChatWidget() {
 
           {/* Quick Prompts */}
           {messages.length <= 2 && (
-            <div className="px-3 py-2 bg-obsidian-card border-t border-obsidian-border/50 flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5 border-t border-line/50 bg-[#080808] px-3 py-2">
               {quickPrompts.map((prompt, idx) => (
                 <button
                   key={idx}
                   type="button"
                   onClick={() => handleSend(prompt)}
-                  className="text-[11px] px-2.5 py-1 rounded-full bg-obsidian-surface hover:bg-violet-soft border border-obsidian-border hover:border-violet-glow/40 text-slate-300 hover:text-white transition-all text-left truncate max-w-full"
+                  className="max-w-full truncate rounded-full border border-line bg-surface-2 px-2.5 py-1 text-left text-[11px] text-[#ccc] transition-all hover:border-lime/40 hover:text-white"
                 >
                   + {prompt}
                 </button>
@@ -257,21 +256,21 @@ export default function FloatingChatWidget() {
               e.preventDefault();
               handleSend();
             }}
-            className="p-3 bg-obsidian-surface border-t border-obsidian-border flex items-center gap-2"
+            className="flex items-center gap-2 border-t border-line bg-surface-2 p-3"
           >
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={t("inputPlaceholder")}
-              className="flex-1 bg-obsidian-card border border-obsidian-border rounded-xl px-3.5 py-2 text-xs sm:text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-glow transition-colors"
+              className="flex-1 rounded-xl border border-line bg-[#080808] px-3.5 py-2 text-xs text-white placeholder-muted focus:border-lime focus:outline-none sm:text-sm"
             />
             <button
               type="submit"
               disabled={!input.trim() || isTyping}
-              className="p-2.5 rounded-xl bg-violet-electric disabled:opacity-40 hover:bg-violet-hover text-white transition-all shadow-violet shrink-0"
+              className="shrink-0 rounded-xl bg-lime p-2.5 text-[#080808] transition-all hover:brightness-95 disabled:opacity-40"
             >
-              <Send className="w-4 h-4" />
+              <Send className="h-4 w-4" />
             </button>
           </form>
         </div>

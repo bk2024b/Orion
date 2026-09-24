@@ -9,8 +9,8 @@ import FloatingChatWidget from "@/components/chat/FloatingChatWidget";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
-  title: "ORION — Digital Systems for Ambitious Businesses",
-  description: "Studio de transformation digitale basé au Bénin. Nous concevons des sites web haute performance, applications métier sur-mesure et systèmes d'IA.",
+  title: "ORION — Build beyond.",
+  description: "Studio digital basé au Bénin. Sites web, applications métier, automatisation et systèmes d'IA pour entreprises ambitieuses.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -38,7 +38,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <body className="min-h-screen bg-obsidian text-slate-100 antialiased flex flex-col justify-between selection:bg-violet-electric selection:text-white">
+      <body className="min-h-screen bg-ink text-[#f5f5f0] antialiased flex flex-col justify-between">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Navbar />
           <main className="flex-1">{children}</main>

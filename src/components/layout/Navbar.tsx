@@ -1,119 +1,75 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 import OpenChatButton from "@/components/chat/OpenChatButton";
-import { Menu, X, Sparkles, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const t = useTranslations("nav");
-  const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const navLinks = [
-    { href: "#divisions", label: t("services") },
-    { href: "#work", label: t("work") },
-    { href: "#about", label: t("about") },
+    { href: "#services", label: t("services") },
+    { href: "#process", label: t("process") },
+    { href: "#pricing", label: t("pricing") },
+    { href: "#faq", label: t("faq") },
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-obsidian/90 backdrop-blur-md border-b border-obsidian-border py-3 shadow-lg"
-          : "bg-transparent py-5"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          {/* Logo ORION */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-electric to-violet-glow flex items-center justify-center text-white font-heading font-extrabold text-lg shadow-violet transition-transform group-hover:scale-105">
-              O
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-extrabold text-xl tracking-wider text-white">
-                ORION<span className="text-violet-glow">.</span>
-              </span>
-              <span className="text-[9px] uppercase tracking-widest text-slate-400 font-semibold -mt-1">
-                Build Beyond
-              </span>
-            </div>
-          </Link>
+    <header className="sticky top-0 z-50 flex h-[78px] items-center border-b border-line bg-ink/80 backdrop-blur-xl">
+      <div className="mx-auto flex w-[calc(100%-40px)] max-w-content items-center justify-between">
+        <Link href="/" className="text-[19px] font-[850] tracking-[0.17em]">
+          ORION
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden gap-7 text-[13px] text-[#aaa] md:flex">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-white">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="hidden items-center gap-4 text-xs text-[#aaa] md:flex">
+          <LanguageSwitcher />
+          <OpenChatButton className="inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#f5f5f0] bg-[#f5f5f0] px-[18px] py-[13px] text-[13px] font-bold text-[#050505] transition-transform hover:-translate-y-0.5">
+            {t("startProject")} →
+          </OpenChatButton>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="flex items-center gap-3 text-[#aaa] md:hidden"
+          aria-label="Toggle Menu"
+        >
+          <LanguageSwitcher />
+          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </div>
+
+      {mobileMenuOpen && (
+        <div className="absolute left-0 right-0 top-full border-b border-line bg-ink p-5 md:hidden">
+          <div className="mx-auto flex w-[calc(100%-40px)] max-w-content flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-sm text-[#aaa] hover:text-white"
               >
                 {link.label}
               </a>
             ))}
-          </nav>
-
-          {/* Right Actions: Lang Switcher + CTA */}
-          <div className="hidden md:flex items-center gap-3">
-            <LanguageSwitcher />
-            <OpenChatButton className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-violet-electric hover:bg-violet-hover text-white text-sm font-semibold transition-all shadow-violet hover:shadow-violet-lg hover:scale-105">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>{t("startProject")}</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+            <OpenChatButton className="mt-1 inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#f5f5f0] bg-[#f5f5f0] px-[18px] py-[13px] text-[13px] font-bold text-[#050505]">
+              {t("startProject")} →
             </OpenChatButton>
           </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-3 md:hidden">
-            <LanguageSwitcher />
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg bg-obsidian-card border border-obsidian-border text-slate-300 hover:text-white"
-              aria-label="Toggle Menu"
-            >
-              {mobileMenuOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
-            </button>
-          </div>
         </div>
-
-        {/* Mobile Dropdown */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 p-4 rounded-2xl bg-obsidian-card border border-obsidian-border shadow-2xl backdrop-blur-xl animate-in fade-in slide-in-from-top-4">
-            <nav className="flex flex-col gap-3">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-obsidian-surface transition-colors"
-                >
-                  {link.label}
-                </a>
-              ))}
-              <OpenChatButton className="mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-violet-electric text-white text-sm font-semibold shadow-violet">
-                <Sparkles className="w-4 h-4" />
-                <span>{t("startProject")}</span>
-              </OpenChatButton>
-            </nav>
-          </div>
-        )}
-      </div>
+      )}
     </header>
   );
 }
