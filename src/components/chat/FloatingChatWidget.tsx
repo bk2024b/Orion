@@ -135,7 +135,7 @@ export default function FloatingChatWidget() {
   const quickPrompts = [t("quick1"), t("quick2"), t("quick3")];
 
   return (
-    <div className="fixed inset-x-4 bottom-4 z-50 flex justify-end sm:inset-x-auto sm:bottom-6 sm:right-6">
+    <div className="fixed inset-x-3 bottom-3 z-50 flex justify-end sm:inset-x-auto sm:bottom-6 sm:right-6">
       {/* Floating Toggle Button */}
       {!isOpen && (
         <button
@@ -153,7 +153,7 @@ export default function FloatingChatWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="flex h-[min(540px,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] w-full max-w-[400px] min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-[#0b0b0b] shadow-2xl sm:h-[540px] sm:w-[400px]">
+        <div className="flex h-[min(480px,calc(100dvh-120px))] max-h-[calc(100dvh-120px)] w-full max-w-[400px] min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-[#0b0b0b] shadow-2xl sm:h-[540px] sm:max-h-[85vh] sm:w-[400px]">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-line bg-surface-2 p-4">
             <div className="flex items-center gap-3">
