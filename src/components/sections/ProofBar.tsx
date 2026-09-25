@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Reveal from "@/components/motion/Reveal";
 
 export default function ProofBar() {
   const t = useTranslations("proof");
@@ -7,16 +8,18 @@ export default function ProofBar() {
   return (
     <div className="mx-auto grid w-[calc(100%-40px)] max-w-content grid-cols-1 border-b border-line sm:grid-cols-4">
       {items.map((key, idx) => (
-        <div
-          key={key}
-          className={`border-line px-5 py-6 text-xs text-[#777] border-b sm:border-b-0 last:border-b-0 sm:border-r sm:last:border-r-0`}
-        >
-          <strong className="mb-1 block text-[13px] text-[#eee]">
-            {t(`${key}.label`)}
-          </strong>
-          {t(`${key}.sub`)}
-        </div>
+        <Reveal key={key} delay={idx * 0.06} y={14}>
+          <div
+            className={`border-line px-5 py-6 text-xs text-[#777] border-b sm:border-b-0 last:border-b-0 sm:border-r sm:last:border-r-0`}
+          >
+            <strong className="mb-1 block text-[13px] text-[#eee]">
+              {t(`${key}.label`)}
+            </strong>
+            {t(`${key}.sub`)}
+          </div>
+        </Reveal>
       ))}
     </div>
   );
 }
+

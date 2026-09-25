@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Reveal from "@/components/motion/Reveal";
 
 interface FaqItem {
   q: string;
@@ -12,24 +13,29 @@ export default function FAQSection() {
   return (
     <section id="faq" className="border-b border-line py-20 md:py-[105px]">
       <div className="mx-auto w-[calc(100%-40px)] max-w-content">
-        <div className="mb-10 max-w-[820px] md:mb-[52px]">
-          <div className="mb-5 text-[10px] font-extrabold uppercase tracking-[0.17em] text-lime">
-            {t("eyebrow")}
+        <Reveal>
+          <div className="mb-10 max-w-[820px] md:mb-[52px]">
+            <div className="mb-5 text-[10px] font-extrabold uppercase tracking-[0.17em] text-lime">
+              {t("eyebrow")}
+            </div>
+            <h2 className="text-[clamp(32px,5vw,64px)] font-[760] leading-[1.02] tracking-[-0.045em] sm:leading-[0.98] sm:tracking-[-0.055em]">
+              {t("title")}
+            </h2>
           </div>
-          <h2 className="text-[clamp(32px,5vw,64px)] font-[760] leading-[1.02] tracking-[-0.045em] sm:leading-[0.98] sm:tracking-[-0.055em]">
-            {t("title")}
-          </h2>
-        </div>
+        </Reveal>
 
         <div className="max-w-[900px]">
           {items.map((item, idx) => (
-            <details key={idx} className="border-t border-line py-5 last:border-b last:border-line">
-              <summary className="text-base font-semibold">{item.q}</summary>
-              <p className="mt-3 max-w-[760px] text-[13px] text-[#888]">{item.a}</p>
-            </details>
+            <Reveal key={idx} delay={Math.min(idx * 0.05, 0.3)} y={12}>
+              <details className="border-t border-line py-5 last:border-b last:border-line">
+                <summary className="text-base font-semibold">{item.q}</summary>
+                <p className="mt-3 max-w-[760px] text-[13px] text-[#888]">{item.a}</p>
+              </details>
+            </Reveal>
           ))}
         </div>
       </div>
     </section>
   );
 }
+

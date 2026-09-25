@@ -173,5 +173,134 @@
   "footer": {
     "copyright": "© 2026 ORION — Build beyond.",
     "tagline": "Web · Apps · Automatisation · IA"
+  },
+  "webOffer": {
+    "hero": {
+      "eyebrow": "ORION WEBSITES / BUILD BEYOND",
+      "titleLine1": "Votre site web existe.",
+      "titleLine2": "Mais est-ce qu'il travaille pour vous ?",
+      "lead": "Nous transformons les sites web obsolètes, lents et invisibles en expériences rapides, optimisées pour Google et conçues pour générer des contacts.",
+      "ctaPrimary": "Faire analyser mon site",
+      "ctaSecondary": "Voir l'offre",
+      "note": "Site actuel → nouveau site en 7 jours."
+    },
+    "problem": {
+      "kicker": "Le problème",
+      "title": "Votre entreprise mérite mieux qu'un site qui dort.",
+      "subtitle": "Le problème n'est pas d'avoir un site. Le problème, c'est d'avoir un site qui ne produit rien.",
+      "cards": [
+        { "title": "Il met trop longtemps à charger.", "desc": "Votre visiteur quitte avant même de voir votre offre." },
+        { "title": "Il fonctionne mal sur mobile.", "desc": "Une expérience frustrante fait perdre confiance et attention." },
+        { "title": "Il est mal préparé pour Google.", "desc": "Les personnes qui recherchent vos services ont du mal à vous trouver." },
+        { "title": "Il ne dit pas quoi faire.", "desc": "Pas de parcours clair, pas d'appel à l'action évident." },
+        { "title": "Il ressemble à une brochure.", "desc": "Il présente votre entreprise sans réellement aider à convertir." },
+        { "title": "Il est abandonné après sa mise en ligne.", "desc": "Un site devrait pouvoir évoluer avec votre entreprise." }
+      ]
+    },
+    "transform": {
+      "kicker": "La transformation",
+      "title": "D'un site qui existe à un site qui travaille.",
+      "beforeTitle": "Avant",
+      "beforeItems": ["Site lent", "Invisible ou mal structuré pour Google", "Design dépassé", "Mauvaise expérience mobile", "Visiteur perdu", "Aucun parcours de conversion"],
+      "afterTitle": "Avec Orion",
+      "afterItems": ["Performance optimisée", "Structure SEO propre", "Design moderne", "Mobile-first", "Parcours clair", "Actions visibles et mesurables"]
+    },
+    "features": {
+      "kicker": "Ce que vous obtenez",
+      "title": "Nous ne créons pas simplement des sites web.",
+      "subtitle": "Nous construisons une présence digitale pensée autour de votre activité et de vos objectifs.",
+      "items": [
+        { "title": "Design personnalisé", "desc": "Une interface construite autour de votre marque, votre activité et votre clientèle." },
+        { "title": "Mobile-first", "desc": "Une expérience conçue pour les écrans que vos clients utilisent réellement." },
+        { "title": "Performance", "desc": "Pages rapides, images optimisées, code propre et expérience fluide." },
+        { "title": "SEO-ready", "desc": "Une base technique claire pour aider les moteurs de recherche à comprendre votre site." },
+        { "title": "Conversion", "desc": "Chaque page possède un objectif : informer, rassurer, contacter, réserver ou acheter." },
+        { "title": "Analytics", "desc": "Comprenez d'où viennent vos visiteurs et ce qu'ils font sur votre site." },
+        { "title": "WhatsApp & contact", "desc": "Passez directement de la découverte à la conversation." },
+        { "title": "Évolutivité", "desc": "Votre site peut devenir demain votre boutique, application ou système métier." },
+        { "title": "Sécurité", "desc": "HTTPS, déploiement propre et bonnes pratiques techniques." }
+      ]
+    },
+    "showcase": {
+      "kicker": "Show, don't tell",
+      "title": "Votre ancien site n'a pas besoin d'être mauvais. Il peut simplement être dépassé.",
+      "oldLabel": "Ancienne expérience",
+      "oldTitle": "Bienvenue sur notre site",
+      "oldScores": [
+        { "value": "42", "label": "Performance" },
+        { "value": "58", "label": "Mobile" },
+        { "value": "21", "label": "SEO" },
+        { "value": "34", "label": "Conversion" }
+      ],
+      "newLabel": "Expérience Orion",
+      "newTitle": "Votre entreprise.\nClairement.",
+      "newCtaLabel": "Nous contacter →",
+      "newScores": [
+        { "value": "↑", "label": "Rapide" },
+        { "value": "✓", "label": "Mobile" },
+        { "value": "✓", "label": "SEO" },
+        { "value": "→", "label": "Action" }
+      ]
+    },
+    "process": {
+      "kicker": "Notre méthode",
+      "title": "De votre site actuel à votre nouveau site.",
+      "subtitle": "Un processus simple, transparent et orienté résultat.",
+      "steps": [
+        { "num": "01 / ANALYSE", "title": "Comprendre", "desc": "Nous examinons votre site actuel, votre activité et vos objectifs." },
+        { "num": "02 / STRUCTURE", "title": "Organiser", "desc": "Nous définissons l'architecture, les pages et le parcours utilisateur." },
+        { "num": "03 / BUILD", "title": "Construire", "desc": "Design personnalisé, développement moderne et optimisation." },
+        { "num": "04 / LAUNCH", "title": "Lancer", "desc": "Nous testons, optimisons et mettons votre nouveau site en ligne." }
+      ],
+      "deliveryNote": "Délai cible :",
+      "deliveryValue": "7 jours"
+    },
+    "offer": {
+      "kicker": "L'offre principale",
+      "name": "ORION WEBSITE",
+      "title": "Votre nouveau site professionnel, prêt en 7 jours.",
+      "subtitle": "Pour les entreprises qui veulent remplacer un site dépassé ou enfin avoir une vraie présence en ligne.",
+      "price": "250 000 FCFA",
+      "cta": "Construire mon site",
+      "checks": ["Jusqu'à 5 pages", "Design personnalisé", "Responsive mobile / tablette / desktop", "SEO technique de base", "Optimisation des performances", "WhatsApp / téléphone / formulaire", "Google Analytics & Search Console", "Domaine & déploiement", "HTTPS / sécurité", "Formation à la gestion"]
+    },
+    "pricing": {
+      "kicker": "Tarifs",
+      "title": "Choisissez votre prochain niveau.",
+      "tiers": {
+        "launch": { "name": "LAUNCH", "title": "Présence professionnelle", "price": "250 000 FCFA", "delay": "Délai cible : 7 jours", "features": ["5 pages", "SEO technique", "Performance", "Mobile-first", "Analytics", "WhatsApp"], "cta": "Commencer" },
+        "grow": { "name": "GROW", "title": "Présence digitale avancée", "price": "500 000 FCFA", "delay": "Délai cible : 10–14 jours", "features": ["Jusqu'à 10 pages", "CMS", "Catalogue", "SEO approfondi", "Intégrations", "Conversion"], "cta": "Parler à Orion" },
+        "system": { "name": "SYSTEM", "title": "Un véritable système digital", "price": "Sur devis", "delay": "Selon le projet", "features": ["E-commerce", "Réservation", "Dashboards", "Web apps", "Automatisation", "IA"], "cta": "Décrire mon projet" }
+      }
+    },
+    "care": {
+      "kicker": "Après le lancement",
+      "title": "Votre site ne devrait pas être abandonné après sa mise en ligne.",
+      "essential": { "name": "CARE ESSENTIAL", "price": "25 000 FCFA / mois", "desc": "Maintenance essentielle, mises à jour et assistance." },
+      "growth": { "name": "CARE GROWTH", "price": "50 000 FCFA / mois", "desc": "Maintenance + évolutions + optimisation continue." },
+      "scale": { "name": "CARE SCALE", "price": "100 000+ FCFA / mois", "desc": "Pour faire de votre site un véritable canal digital." }
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "Les questions que vous vous posez.",
+      "items": [
+        { "q": "Combien de temps faut-il pour créer mon site ?", "a": "Notre offre Launch vise une livraison en 7 jours, à partir du moment où nous disposons de tous les éléments nécessaires." },
+        { "q": "Est-ce que vous utilisez des templates ?", "a": "Nous pouvons utiliser des composants et technologies existantes pour accélérer le développement, mais votre site est conçu autour de votre entreprise et de vos objectifs." },
+        { "q": "Est-ce que mon site apparaîtra automatiquement sur Google ?", "a": "Nous mettons en place une base technique optimisée pour l'indexation. Nous ne promettons toutefois pas une position précise dans Google : le référencement dépend de nombreux facteurs." },
+        { "q": "Est-ce que je possède mon site ?", "a": "Oui, selon les conditions définies dans votre contrat." },
+        { "q": "Est-ce que vous pouvez refaire mon site actuel ?", "a": "Oui. Nous pouvons analyser votre site existant puis reconstruire l'expérience et la structure." },
+        { "q": "Est-ce que vous faites des boutiques en ligne ?", "a": "Oui. Les projets e-commerce font partie de nos développements personnalisés." },
+        { "q": "Est-ce que vous travaillez avec des entreprises hors du Bénin ?", "a": "Oui. Orion peut travailler entièrement à distance." },
+        { "q": "Est-ce que vous pouvez intégrer l'IA ?", "a": "Oui. Chatbots, assistants, automatisations, agents IA et intégrations peuvent être ajoutés selon le besoin." }
+      ]
+    },
+    "final": {
+      "kicker": "Votre prochain niveau",
+      "titleLine1": "Votre entreprise a déjà fait le plus difficile.",
+      "titleLine2": "Elle existe.",
+      "subtitle": "Maintenant, donnez-lui une présence digitale à la hauteur. Votre prochain client cherche peut-être déjà ce que vous proposez. La question est : est-ce qu'il vous trouvera ?",
+      "ctaPrimary": "Faire analyser mon site",
+      "ctaSecondary": "Je n'ai pas encore de site"
+    }
   }
 }

@@ -173,5 +173,134 @@
   "footer": {
     "copyright": "© 2026 ORION — Build beyond.",
     "tagline": "Web · Apps · Automation · AI"
+  },
+  "webOffer": {
+    "hero": {
+      "eyebrow": "ORION WEBSITES / BUILD BEYOND",
+      "titleLine1": "Your website exists.",
+      "titleLine2": "But is it actually working for you?",
+      "lead": "We turn outdated, slow and invisible websites into fast experiences, optimized for Google and built to generate leads.",
+      "ctaPrimary": "Get my site analyzed",
+      "ctaSecondary": "See the offer",
+      "note": "Current site → new site in 7 days."
+    },
+    "problem": {
+      "kicker": "The problem",
+      "title": "Your business deserves better than a website that's asleep.",
+      "subtitle": "The problem isn't having a website. The problem is having a website that produces nothing.",
+      "cards": [
+        { "title": "It takes too long to load.", "desc": "Your visitor leaves before even seeing your offer." },
+        { "title": "It works poorly on mobile.", "desc": "A frustrating experience loses trust and attention." },
+        { "title": "It's poorly prepared for Google.", "desc": "People searching for your services struggle to find you." },
+        { "title": "It doesn't say what to do.", "desc": "No clear path, no obvious call to action." },
+        { "title": "It looks like a brochure.", "desc": "It presents your business without actually helping it convert." },
+        { "title": "It's been abandoned since launch.", "desc": "A website should be able to evolve with your business." }
+      ]
+    },
+    "transform": {
+      "kicker": "The transformation",
+      "title": "From a website that exists to a website that works.",
+      "beforeTitle": "Before",
+      "beforeItems": ["Slow website", "Invisible or poorly structured for Google", "Outdated design", "Poor mobile experience", "Lost visitors", "No conversion path"],
+      "afterTitle": "With Orion",
+      "afterItems": ["Optimized performance", "Clean SEO structure", "Modern design", "Mobile-first", "Clear journey", "Visible, measurable actions"]
+    },
+    "features": {
+      "kicker": "What you get",
+      "title": "We don't just build websites.",
+      "subtitle": "We build a digital presence designed around your business and your goals.",
+      "items": [
+        { "title": "Custom design", "desc": "An interface built around your brand, your business and your customers." },
+        { "title": "Mobile-first", "desc": "An experience designed for the screens your customers actually use." },
+        { "title": "Performance", "desc": "Fast pages, optimized images, clean code and a smooth experience." },
+        { "title": "SEO-ready", "desc": "A clean technical foundation to help search engines understand your site." },
+        { "title": "Conversion", "desc": "Every page has a purpose: inform, reassure, contact, book or buy." },
+        { "title": "Analytics", "desc": "Understand where your visitors come from and what they do on your site." },
+        { "title": "WhatsApp & contact", "desc": "Go straight from discovery to conversation." },
+        { "title": "Scalability", "desc": "Your website can become your store, app or business system tomorrow." },
+        { "title": "Security", "desc": "HTTPS, clean deployment and solid technical practices." }
+      ]
+    },
+    "showcase": {
+      "kicker": "Show, don't tell",
+      "title": "Your old website doesn't need to be bad. It can simply be outdated.",
+      "oldLabel": "Old experience",
+      "oldTitle": "Welcome to our website",
+      "oldScores": [
+        { "value": "42", "label": "Performance" },
+        { "value": "58", "label": "Mobile" },
+        { "value": "21", "label": "SEO" },
+        { "value": "34", "label": "Conversion" }
+      ],
+      "newLabel": "Orion experience",
+      "newTitle": "Your business.\nClearly.",
+      "newCtaLabel": "Contact us →",
+      "newScores": [
+        { "value": "↑", "label": "Fast" },
+        { "value": "✓", "label": "Mobile" },
+        { "value": "✓", "label": "SEO" },
+        { "value": "→", "label": "Action" }
+      ]
+    },
+    "process": {
+      "kicker": "Our method",
+      "title": "From your current site to your new site.",
+      "subtitle": "A simple, transparent and result-driven process.",
+      "steps": [
+        { "num": "01 / ANALYZE", "title": "Understand", "desc": "We review your current website, your business and your goals." },
+        { "num": "02 / STRUCTURE", "title": "Organize", "desc": "We define the architecture, pages and user journey." },
+        { "num": "03 / BUILD", "title": "Build", "desc": "Custom design, modern development and optimization." },
+        { "num": "04 / LAUNCH", "title": "Launch", "desc": "We test, optimize and deploy your new website." }
+      ],
+      "deliveryNote": "Target delivery:",
+      "deliveryValue": "7 days"
+    },
+    "offer": {
+      "kicker": "The main offer",
+      "name": "ORION WEBSITE",
+      "title": "Your new professional website, ready in 7 days.",
+      "subtitle": "For businesses that want to replace an outdated website or finally get a real online presence.",
+      "price": "250,000 FCFA",
+      "cta": "Build my website",
+      "checks": ["Up to 5 pages", "Custom design", "Responsive mobile / tablet / desktop", "Basic technical SEO", "Performance optimization", "WhatsApp / phone / form", "Google Analytics & Search Console", "Domain & deployment", "HTTPS / security", "Management training"]
+    },
+    "pricing": {
+      "kicker": "Pricing",
+      "title": "Choose your next level.",
+      "tiers": {
+        "launch": { "name": "LAUNCH", "title": "Professional presence", "price": "250,000 FCFA", "delay": "Target delivery: 7 days", "features": ["5 pages", "Technical SEO", "Performance", "Mobile-first", "Analytics", "WhatsApp"], "cta": "Get started" },
+        "grow": { "name": "GROW", "title": "Advanced digital presence", "price": "500,000 FCFA", "delay": "Target delivery: 10\u201314 days", "features": ["Up to 10 pages", "CMS", "Catalog", "Advanced SEO", "Integrations", "Conversion"], "cta": "Talk to Orion" },
+        "system": { "name": "SYSTEM", "title": "A true digital system", "price": "Custom", "delay": "Depends on the project", "features": ["E-commerce", "Booking", "Dashboards", "Web apps", "Automation", "AI"], "cta": "Describe my project" }
+      }
+    },
+    "care": {
+      "kicker": "After launch",
+      "title": "Your website shouldn't be abandoned after launch.",
+      "essential": { "name": "CARE ESSENTIAL", "price": "25,000 FCFA / month", "desc": "Essential maintenance, updates and support." },
+      "growth": { "name": "CARE GROWTH", "price": "50,000 FCFA / month", "desc": "Maintenance + improvements + continuous optimization." },
+      "scale": { "name": "CARE SCALE", "price": "100,000+ FCFA / month", "desc": "To turn your website into a real digital channel." }
+    },
+    "faq": {
+      "kicker": "FAQ",
+      "title": "The questions you're asking.",
+      "items": [
+        { "q": "How long does it take to build my website?", "a": "Our Launch offer targets a 7-day delivery, once we have everything we need from you." },
+        { "q": "Do you use templates?", "a": "We may use existing components and technology to speed up development, but your website is designed around your business and your goals." },
+        { "q": "Will my website automatically show up on Google?", "a": "We set up a technical foundation optimized for indexing. We don't promise a specific Google ranking though: SEO depends on many factors." },
+        { "q": "Do I own my website?", "a": "Yes, according to the terms defined in your contract." },
+        { "q": "Can you redo my current website?", "a": "Yes. We can analyze your existing website and then rebuild the experience and structure." },
+        { "q": "Do you build online stores?", "a": "Yes. E-commerce projects are part of our custom development work." },
+        { "q": "Do you work with businesses outside Benin?", "a": "Yes. Orion can work entirely remotely." },
+        { "q": "Can you integrate AI?", "a": "Yes. Chatbots, assistants, automations, AI agents and integrations can be added depending on your needs." }
+      ]
+    },
+    "final": {
+      "kicker": "Your next level",
+      "titleLine1": "Your business has already done the hardest part.",
+      "titleLine2": "It exists.",
+      "subtitle": "Now give it a digital presence to match. Your next customer may already be looking for what you offer. The question is: will they find you?",
+      "ctaPrimary": "Get my site analyzed",
+      "ctaSecondary": "I don't have a website yet"
+    }
   }
 }
