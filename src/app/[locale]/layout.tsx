@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  verification: {
+    google: "ZilcoLVCMEUHQtUAAU3aOgfPqvd9MSjazLClBqS-CVA",
+  },
 };
 
 export function generateStaticParams() {
