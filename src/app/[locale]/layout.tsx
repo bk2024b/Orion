@@ -6,13 +6,14 @@ import { routing } from "@/i18n/routing";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingChatWidget from "@/components/chat/FloatingChatWidget";
+import { Analytics } from "@vercel/analytics/react";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "ORION — Build beyond.",
   description: "Studio digital basé au Bénin. Sites web, applications métier, automatisation et systèmes d'IA pour entreprises ambitieuses.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
   },
   verification: {
     google: "ZilcoLVCMEUHQtUAAU3aOgfPqvd9MSjazLClBqS-CVA",
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingChatWidget />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
