@@ -65,9 +65,9 @@ export default async function WebsitesOfferPage({
   const faqItems = t.raw("faq.items") as FaqItem[];
 
   const primaryBtn =
-    "inline-flex items-center justify-center gap-2 rounded-[9px] border border-white bg-white px-[18px] py-[13px] text-[13px] font-bold text-[#080808] transition-transform hover:-translate-y-0.5";
+    "inline-flex items-center justify-center gap-2 rounded-[9px] border border-lime bg-lime px-[18px] py-[13px] text-[13px] font-bold text-[#080808] shadow-[0_0_24px_-10px_rgba(200,255,69,0.8)] transition-all hover:-translate-y-0.5 hover:brightness-95";
   const ghostBtn =
-    "inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#444] bg-transparent px-[18px] py-[13px] text-[13px] font-bold text-white transition-all hover:-translate-y-0.5 hover:border-[#777]";
+    "inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#444] bg-transparent px-[18px] py-[13px] text-[13px] font-bold text-white transition-all hover:-translate-y-0.5 hover:border-lime hover:text-lime";
 
   return (
     <div>
@@ -167,7 +167,7 @@ export default async function WebsitesOfferPage({
                 →
               </div>
 
-              <div className="border border-[#f4f4f4] bg-[#f4f4f4] p-[35px] text-[#050505]">
+              <div className="border border-lime/50 bg-lime p-[35px] text-[#050505]">
                 <h3 className="mt-0 text-[25px]">{t("transform.afterTitle")}</h3>
                 <ul className="grid gap-3.5 p-0">
                   {afterItems.map((item, idx) => (
@@ -273,7 +273,7 @@ export default async function WebsitesOfferPage({
                   </div>
                   <div className="my-2.5 h-[7px] bg-[#292929]" />
                   <div className="my-2.5 h-[7px] w-[55%] bg-[#292929]" />
-                  <span className="mt-4 inline-block rounded-[9px] border border-white bg-white px-[18px] py-[13px] text-[13px] font-bold text-[#080808]">
+                  <span className="mt-4 inline-block rounded-[9px] border border-lime bg-lime px-[18px] py-[13px] text-[13px] font-bold text-[#080808]">
                     {t("showcase.newCtaLabel")}
                   </span>
                   <div className="mt-7 grid grid-cols-2 border-t border-line sm:grid-cols-4">
@@ -343,7 +343,7 @@ export default async function WebsitesOfferPage({
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="border border-[#f4f4f4] bg-[#f4f4f4] p-7 text-[#050505] md:p-[42px]">
+            <div className="border border-lime/50 bg-lime p-7 text-[#050505] shadow-[0_0_40px_-18px_rgba(200,255,69,0.65)] md:p-[42px]">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-[1.2fr_0.8fr] md:gap-[50px]">
                 <div>
                   <h3 className="m-0 text-[28px] leading-[1.1] md:text-[34px]">
@@ -353,7 +353,7 @@ export default async function WebsitesOfferPage({
                   <div className="my-5 text-[42px] font-black leading-none tracking-[-0.07em] md:text-[55px]">
                     {t("offer.price")}
                   </div>
-                  <OpenChatButton className="inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#050505] bg-[#050505] px-[18px] py-[13px] text-[13px] font-bold text-white transition-transform hover:-translate-y-0.5">
+                  <OpenChatButton className="inline-flex items-center justify-center gap-2 rounded-[9px] border border-[#080808] bg-[#080808] px-[18px] py-[13px] text-[13px] font-bold text-lime transition-all hover:-translate-y-0.5 hover:brightness-95">
                     {t("offer.cta")} →
                   </OpenChatButton>
                 </div>
@@ -394,7 +394,7 @@ export default async function WebsitesOfferPage({
               <Reveal key={idx} delay={idx * 0.08} className="h-full">
                 <div
                   className={`flex h-full min-h-[430px] flex-col border p-[30px] transition-all hover:-translate-y-1.5 ${
-                    featured ? "border-white" : "border-line bg-surface-card"
+                    featured ? "border-lime bg-lime/[0.04]" : "border-line bg-surface-card"
                   }`}
                 >
                   <div className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#777]">
@@ -408,7 +408,7 @@ export default async function WebsitesOfferPage({
                   <ul className="my-5 grid flex-1 list-none gap-2.5 p-0 text-[#aaa]">
                     {tier.features.map((f, i) => (
                       <li key={i} className="flex items-start gap-2.5">
-                        <span className="text-white">✓</span>
+                        <span className="text-lime">✓</span>
                         {f}
                       </li>
                     ))}
