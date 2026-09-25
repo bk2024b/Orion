@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://orion-inky-rho.vercel.app";
+const baseUrl = "https://oriondigitalagency.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["fr", "en"];
