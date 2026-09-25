@@ -135,7 +135,7 @@ export default function FloatingChatWidget() {
   const quickPrompts = [t("quick1"), t("quick2"), t("quick3")];
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed inset-x-4 bottom-4 z-50 flex justify-end sm:inset-x-auto sm:bottom-6 sm:right-6">
       {/* Floating Toggle Button */}
       {!isOpen && (
         <button
@@ -153,7 +153,7 @@ export default function FloatingChatWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="flex h-[540px] max-h-[85vh] w-[360px] flex-col overflow-hidden rounded-2xl border border-line bg-[#0b0b0b] shadow-2xl sm:w-[400px]">
+        <div className="flex h-[min(540px,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] w-full max-w-[400px] min-w-0 flex-col overflow-hidden rounded-2xl border border-line bg-[#0b0b0b] shadow-2xl sm:h-[540px] sm:w-[400px]">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-line bg-surface-2 p-4">
             <div className="flex items-center gap-3">
@@ -236,13 +236,13 @@ export default function FloatingChatWidget() {
 
           {/* Quick Prompts */}
           {messages.length <= 2 && (
-            <div className="flex flex-wrap gap-1.5 border-t border-line/50 bg-[#080808] px-3 py-2">
+            <div className="flex max-h-[72px] flex-wrap gap-1.5 overflow-y-auto border-t border-line/50 bg-[#080808] px-3 py-2 sm:max-h-none">
               {quickPrompts.map((prompt, idx) => (
                 <button
                   key={idx}
                   type="button"
                   onClick={() => handleSend(prompt)}
-                  className="max-w-full truncate rounded-full border border-line bg-surface-2 px-2.5 py-1 text-left text-[11px] text-[#ccc] transition-all hover:border-lime/40 hover:text-white"
+                  className="max-w-full truncate rounded-full border border-line bg-surface-2 px-2.5 py-1 text-left text-[11px] text-[#ccc] transition-all hover:border-lime/40 hover:text-white sm:max-w-[46%]"
                 >
                   + {prompt}
                 </button>
@@ -256,14 +256,14 @@ export default function FloatingChatWidget() {
               e.preventDefault();
               handleSend();
             }}
-            className="flex items-center gap-2 border-t border-line bg-surface-2 p-3"
+            className="flex items-center gap-2 border-t border-line bg-surface-2 p-2.5 sm:p-3"
           >
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={t("inputPlaceholder")}
-              className="flex-1 rounded-xl border border-line bg-[#080808] px-3.5 py-2 text-xs text-white placeholder-muted focus:border-lime focus:outline-none sm:text-sm"
+              className="min-w-0 flex-1 rounded-xl border border-line bg-[#080808] px-3 py-2 text-xs text-white placeholder-muted focus:border-lime focus:outline-none sm:px-3.5 sm:text-sm"
             />
             <button
               type="submit"
